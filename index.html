@@ -30,8 +30,10 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);
   background:#0b0e29cc;border-bottom:1px solid #ffffff14}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;color:var(--text)}
-.logo .dot{width:22px;height:22px;border-radius:50%;background:var(--grad);
-  box-shadow:0 0 16px #38e8ff88}
+.logo img{width:26px;height:26px;border-radius:7px;box-shadow:0 0 16px #38e8ff66}
+.hero-icon{width:132px;height:132px;border-radius:32px;display:block;margin:0 auto 26px;
+  box-shadow:0 22px 70px #38e8ff36,0 0 0 1px #ffffff1a;animation:bob 5s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 nav .links{display:flex;gap:22px;font-size:.92rem}
 nav .links a{color:var(--muted)}
 nav .links a:hover{color:var(--text)}
@@ -131,7 +133,7 @@ footer a:hover{color:var(--text)}
 
 <nav>
   <div class="wrap">
-    <div class="logo"><span class="dot"></span>ArcCue</div>
+    <div class="logo"><img src="img/icon-512.png" alt="ArcCue">ArcCue</div>
     <div class="links">
       <a href="#features">ฟีเจอร์</a><a href="#how">วิธีใช้</a><a href="#pricing">ราคา</a><a href="#faq">คำถามบ่อย</a>
     </div>
@@ -141,6 +143,7 @@ footer a:hover{color:var(--text)}
 
 <header class="hero">
   <div class="wrap">
+    <img class="hero-icon" src="img/icon-512.png" alt="ArcCue — แอปรีโมตสำหรับ Mac">
     <span class="pill">● ทดลองฟรี 7 วัน ไม่ต้องผูกบัตร</span>
     <h1>โทรศัพท์ของคุณ<em> คือรีโมตที่ทรงพลังที่สุด</em><br>ของ Mac</h1>
     <p class="sub">ArcCue เปลี่ยน iPhone เป็น trackpad ไร้สาย คีย์บอร์ดสด รีโมตพรีเซนต์
@@ -266,7 +269,7 @@ footer a:hover{color:var(--text)}
 <footer>
   <div class="wrap">
     <div class="col">
-      <div class="logo" style="font-size:1rem"><span class="dot" style="width:16px;height:16px"></span>ArcCue</div>
+      <div class="logo" style="font-size:1rem"><img src="img/icon-512.png" alt="ArcCue" style="width:20px;height:20px">ArcCue</div>
       <span>Your phone. Your control.</span>
     </div>
     <div class="col">

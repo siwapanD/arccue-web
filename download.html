@@ -20,6 +20,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",sa
 .wrap{max-width:880px;margin:0 auto;padding:0 22px}
 a{color:var(--cyan);text-decoration:none}
 header{padding:64px 0 24px;text-align:center}
+.hero-icon{width:104px;height:104px;border-radius:26px;display:block;margin:0 auto 22px;
+  box-shadow:0 18px 60px #38e8ff33,0 0 0 1px #ffffff1a}
 .pill{display:inline-flex;gap:8px;align-items:center;font-size:.82rem;color:var(--cyan);
   border:1px solid #38e8ff44;border-radius:999px;padding:6px 14px;margin-bottom:20px;background:#38e8ff0f}
 h1{font-size:clamp(1.8rem,4.6vw,2.6rem);font-weight:800}
@@ -52,13 +54,14 @@ footer a{margin:0 8px}
 <div class="wrap">
 <header>
   <span class="pill">⬇︎ ดาวน์โหลด ArcCue</span>
-  <h1>เริ่มใช้ใน <em>หนึ่งนาที</em></h1>
+  <img class="hero-icon" src="img/icon-512.png" alt="ArcCue">
+<h1>เริ่มใช้ใน <em>หนึ่งนาที</em></h1>
   <p class="sub">iPhone เป็นรีโมต · Mac เป็นเครื่องรับ — ทั้งคู่ต้องอยู่ Wi‑Fi เดียวกัน</p>
 </header>
 
 <div class="grid">
   <div class="card">
-    <h2>ArcCue for Mac <span class="tag">ฟรี</span></h2>
+    <h2><img src="img/icon-512.png" alt="" style="width:34px;height:34px;border-radius:9px;vertical-align:-8px;margin-right:8px">ArcCue for Mac <span class="tag">ฟรี</span></h2>
     <p class="req">macOS 14 Sonoma ขึ้นไป · เวอร์ชัน 1.1.0-rc.1 · ~1 MB</p>
     <a class="btn" href="downloads/ArcCueMac.zip" download>⬇︎ ดาวน์โหลด ArcCueMac.zip</a>
     <div class="meta"><span>เปิดตัวล่าสุด: ต.ค. 2026</span><span>Developer ID build</span></div>
