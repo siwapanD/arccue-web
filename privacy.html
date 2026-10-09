@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ArcCue</title>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:image" content="img/icon-512.png">
+<style>
+:root{--navy:#0B0E29;--cyan:#38E8FF;--muted:#9AA6D0;--text:#EAF0FF}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#0B0E29,#1A1E4A);
+  color:var(--text);line-height:1.7;padding:60px 22px}
+main{max-width:720px;margin:0 auto}
+h1{font-size:1.9rem;margin-bottom:8px}
+h2{font-size:1.15rem;margin:34px 0 10px;color:var(--cyan)}
+p,li{color:#C9D3F0;font-size:.97rem}
+ul{padding-left:22px;margin:10px 0}
+a{color:var(--cyan)}
+.updated{color:var(--muted);font-size:.88rem;margin-bottom:30px}
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: October 9, 2026</p>
+
+<p>ArcCue ("the app") is built as a local-network remote control for your Mac.
+We designed it so that <strong>your data stays on your devices</strong>.
+This policy explains what the app touches and what never leaves your hardware.</p>
+
+<h2>What ArcCue does NOT collect</h2>
+<ul>
+<li>No ads, no analytics SDKs, no third-party trackers.</li>
+<li>No accounts or sign-ups — we never ask for your name, email, or phone number.</li>
+<li>We do not see, store, or transmit what you type, point at, or present.</li>
+<li>We do not collect crash logs to any server of our own.</li>
+</ul>
+
+<h2>Data the app processes locally</h2>
+<ul>
+<li><strong>Pairing &amp; session tokens.</strong> A pairing code and a session
+token are exchanged between your iPhone and your Mac over your local Wi-Fi.
+The token is stored in the iOS Keychain (and only as a salted hash on the Mac)
+so the app can reconnect to a trusted Mac.</li>
+<li><strong>Motion sensor data.</strong> Gyro/attitude samples are read on the
+iPhone solely to move the pointer, streamed only to your Mac on the same
+network, and never persisted.</li>
+<li><strong>Device info.</strong> Device name, model, battery level, and app
+version are shared with the paired Mac over the same local connection to
+display connection status. They never leave your network.</li>
+</ul>
+
+<h2>Purchases</h2>
+<p>ArcCue Pro subscriptions are processed entirely by Apple through your Apple
+ID. We receive no card details and cannot see your payment information.
+Purchase status is provided to the app by Apple's StoreKit.</p>
+
+<h2>Permissions the app requests</h2>
+<ul>
+<li><strong>Camera</strong> — only to scan the pairing QR code shown on your Mac.</li>
+<li><strong>Motion &amp; orientation</strong> — only for the air pointer feature.</li>
+<li><strong>Local Network</strong> — to talk to the ArcCue app on your Mac.</li>
+</ul>
+
+<h2>Data security</h2>
+<p>Connections are restricted to your local network and gated by a 6-digit
+pairing code plus a session token. Traffic on your Wi-Fi is not additionally
+TLS-encrypted in the current version; do not use ArcCue on untrusted public
+Wi-Fi.</p>
+
+<h2>Children's privacy</h2>
+<p>ArcCue is not directed at children under 13 and collects no personal data
+from anyone.</p>
+
+<h2>Changes &amp; contact</h2>
+<p>If this policy changes, the updated version will be published on this page.
+Questions? Reach us via the <a href="index.html">ArcCue website</a>.</p>
+</main>
+</body>
+</html>

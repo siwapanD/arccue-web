@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ดาวน์โหลด ArcCue</title>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:image" content="img/icon-512.png">
+<style>
+:root{
+  --navy-top:#0B0E29; --navy-bottom:#1A1E4A; --card:#15193699;
+  --cyan:#38E8FF; --violet:#8C66FF; --text:#EAF0FF; --muted:#9AA6D0;
+  --grad:linear-gradient(120deg,var(--cyan),var(--violet));
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",sans-serif;
+  background:linear-gradient(180deg,var(--navy-top),var(--navy-bottom) 60%,#14173a);
+  color:var(--text);line-height:1.65;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+a{color:var(--cyan);text-decoration:none}
+header{padding:64px 0 24px;text-align:center}
+.pill{display:inline-flex;gap:8px;align-items:center;font-size:.82rem;color:var(--cyan);
+  border:1px solid #38e8ff44;border-radius:999px;padding:6px 14px;margin-bottom:20px;background:#38e8ff0f}
+h1{font-size:clamp(1.8rem,4.6vw,2.6rem);font-weight:800}
+h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--muted);max-width:520px;margin:14px auto 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;padding:36px 0 12px}
+.card{border:1px solid #ffffff14;background:var(--card);border-radius:20px;padding:30px 26px;text-align:left}
+.card h2{font-size:1.2rem;margin-bottom:4px}
+.card .req{color:var(--muted);font-size:.86rem;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--grad);color:#0b0e29;font-weight:700;border-radius:14px;
+  padding:14px 24px;font-size:1rem;border:none;cursor:pointer;width:100%;
+  box-shadow:0 6px 26px #38e8ff44;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:#ffffff10;color:var(--text);box-shadow:none;border:1px solid #ffffff22}
+.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.82rem;margin-top:12px}
+ol{margin:16px 0 0;padding-left:20px;color:#C9D3F0;font-size:.93rem}
+ol li{margin:7px 0}
+.tip{margin-top:16px;border:1px solid #38e8ff33;background:#38e8ff0d;border-radius:12px;
+  padding:12px 14px;font-size:.85rem;color:#C9D3F0}
+.tag{display:inline-block;font-size:.72rem;font-weight:800;color:#0b0e29;background:var(--grad);
+  border-radius:999px;padding:3px 10px;vertical-align:middle;margin-left:8px}
+section{padding:26px 0 70px}
+h3{font-size:1.1rem;margin-bottom:12px;text-align:center}
+footer{border-top:1px solid #ffffff12;padding:30px 0 50px;color:var(--muted);font-size:.88rem;text-align:center}
+footer a{margin:0 8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <span class="pill">⬇︎ ดาวน์โหลด ArcCue</span>
+  <h1>เริ่มใช้ใน <em>หนึ่งนาที</em></h1>
+  <p class="sub">iPhone เป็นรีโมต · Mac เป็นเครื่องรับ — ทั้งคู่ต้องอยู่ Wi‑Fi เดียวกัน</p>
+</header>
+
+<div class="grid">
+  <div class="card">
+    <h2>ArcCue for Mac <span class="tag">ฟรี</span></h2>
+    <p class="req">macOS 14 Sonoma ขึ้นไป · เวอร์ชัน 1.1.0-rc.1 · ~1 MB</p>
+    <a class="btn" href="downloads/ArcCueMac.zip" download>⬇︎ ดาวน์โหลด ArcCueMac.zip</a>
+    <div class="meta"><span>เปิดตัวล่าสุด: ต.ค. 2026</span><span>Developer ID build</span></div>
+    <ol>
+      <li>แตกไฟล์ zip แล้วลาก <strong>ArcCue</strong> ไปที่โฟลเดอร์ <strong>Applications</strong></li>
+      <li><strong>คลิกขวาที่แอป → Open</strong> ในการเปิดครั้งแรก (เพราะเป็นแอปนอก App Store)</li>
+      <li>อนุญาต <strong>Accessibility</strong> ใน System Settings → Privacy &amp; Security</li>
+      <li>เปิดแอป — จะเห็น QR code รอการจับคู่</li>
+    </ol>
+    <div class="tip">💡 แอป Mac เป็น freeware ใช้ร่วมกับ ArcCue บน iPhone ได้ทุกเครื่องที่จับคู่ไว้ ไม่ต้องจ่ายเพิ่ม</div>
+  </div>
+
+  <div class="card">
+    <h2>ArcCue for iPhone</h2>
+    <p class="req">iOS 17 ขึ้นไป · ต้องเป็นเครื่องจริง (ใช้ motion sensor)</p>
+    <a class="btn ghost" href="https://apps.apple.com/app/arccue" target="_blank" rel="noopener">App Store — เร็ว ๆ นี้</a>
+    <ol>
+      <li>เปิด ArcCue บนมือถือ → Settings → <strong>Pair a Mac</strong></li>
+      <li>สแกน QR code ที่แสดงบนจอ Mac</li>
+      <li>เสร็จแล้ว — ลอง Trackpad เลย</li>
+    </ol>
+    <div class="tip">🎯 ฟีเจอร์ Pro (Gyro laser, Live keyboard, Custom Pad) ทดลองฟรี 7 วันเมื่อแอปขึ้นร้าน</div>
+  </div>
+</div>
+
+<section>
+  <h3>มีปัญหาตอนติดตั้ง?</h3>
+  <p style="text-align:center;color:var(--muted);font-size:.92rem">
+    ดู <a href="index.html#faq">คำถามที่พบบ่อย</a> หรือคู่มือแก้ปัญหาในหน้าเว็บหลัก</p>
+</section>
+
+<footer>
+  <a href="index.html">หน้าแรก</a>·<a href="privacy.html">Privacy</a>·<a href="terms.html">Terms</a>
+  <div style="margin-top:10px">© 2026 ArcCue Project</div>
+</footer>
+</div>
+</body>
+</html>
